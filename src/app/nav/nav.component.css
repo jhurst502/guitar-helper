@@ -1,0 +1,12 @@
+.nav-bar {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: aquamarine;
+}
+
+.profile {
+    margin-right: 10vw;
+}

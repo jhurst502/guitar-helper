@@ -1,1 +1,26 @@
-<p>home works!</p>
+<div class="frettboard">
+    Frettboard Here
+</div>
+<form>
+    <mat-form-field>
+        <mat-label>Scale</mat-label>
+        <input type="text" placeholder="Pick One" aria-label="Scale" matInput [formControl]="myControl"
+            [matAutocomplete]="auto">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+            <mat-option *ngFor="let scale of filteredScales | async" [value]="scale">
+                {{scale}}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Key</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let key of keys" [value]="key">
+                {{key}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <button class="save-icon" aria-label="Save Scale" [ngClass]="{'saved' : saved}" (click)="onSave()">
+        <mat-icon>bookmark</mat-icon>
+    </button>
+</form>

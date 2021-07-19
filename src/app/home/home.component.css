@@ -1,0 +1,21 @@
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.frettboard {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save-icon {
+    color: #c7c2c1;
+    background: none;
+    border: none;
+}
+
+.saved {
+    color: #FA3C05;
+}

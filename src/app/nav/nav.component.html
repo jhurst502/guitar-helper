@@ -1,0 +1,9 @@
+<nav class="nav-bar">
+    <a routerLink="/" routerLinkActive="active">Guitar Helper</a>
+    <a routerLink="/profile" routerLinkActive="active">
+        <div class="profile">
+            <img *ngIf="signedIn" />
+            <h3 *ngIf="!signedIn">Login</h3>
+        </div>
+    </a>
+</nav>
